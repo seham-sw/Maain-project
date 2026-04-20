@@ -1,0 +1,12 @@
+﻿@using (Html.BeginForm("UpdateStudent", "Student", FormMethod.Post))
+{
+
+    <input type="hidden" name="studentID" value="@Model.studentID"  />
+
+    <label for="fname">Student Name</label>
+    <input type="text" value="@Model.studentName" name="studentName">
+    <label for="lname">Student Number</label>
+    <input type="text" value="@Model.studentNo" name="studentNo"  >
+    <input type="submit" value="Update" class="button" />
+
+}
